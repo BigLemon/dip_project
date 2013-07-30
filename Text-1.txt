@@ -1,0 +1,83 @@
+                        <table>
+                            <tr>
+                                <td width="150px" align="right">
+                                    <label for="title">Введите вопрос</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="title" name="title" value="" />
+                                </td>
+                                <td>
+                                    <span id="error_title" class="valid_title"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="150px" align="right">
+                                    <label for="type">Тип вопроса</label>
+                                </td>
+                                <td>
+                                    <td><input type="radio" onchange="checkedtype(1);" name="typetest" value="chbox" checked="checked" /><label>Многовариантный</label></td><td><span id="atcbutton"><button onclick="addtochbox(); return false;">Добавить вариант</button><button onclick="delfromchbox(); return false;">Удалить вариант</button></span></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" onchange="checkedtype(1);" name="typetest" value="chbox" checked="checked" /><label>Многовариантный</label></td><td><span id="atcbutton"><button onclick="addtochbox(); return false;">Добавить вариант</button><button onclick="delfromchbox(); return false;">Удалить вариант</button></span></td>
+                                <td><input type="radio" onchange="checkedtype(2);" name="typetest" value="radio" /><label>Одновариантный</label></td><td><span id="atrbutton" style="display: none;"><button onclick="addtoradio(); return false;">Добавить вариант</button><button onclick="delfromradio(); return false;">Удалить вариант</button></span></td>
+                                <td><input type="radio" onchange="checkedtype(3);" name="typetest" value="manual" /><label>Свободный ответ</label></td><td></td>
+                                <td>
+                                    <span id="error_type" class="valid_type"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="150px" align="right">
+                                    <label for="answer1">Ответ 1</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="answer1" name="values[1]" value="" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="ch_right" name="right[1]"><input style="visibility: hidden;" type="radio" class="rd_right" name="right" value="1"> правильный ответ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="150px" align="right">
+                                    <label for="answer1">Ответ 2</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="answer2" name="values[2]" value="" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="ch_right" name="right[2]"><input style="visibility: hidden;" type="radio" class="rd_right" name="right" value="2"> правильный ответ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="150px" align="right">
+                                    <label for="answer1">Ответ 3</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="answer3" name="values[3]" value="" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="ch_right" name="right[3]"><input style="visibility: hidden;" type="radio" class="rd_right" name="right" value="3"> правильный ответ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="150px" align="right">
+                                    <label for="answer1">Ответ 4</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="answer4" name="values[4]" value="" />
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="ch_right" name="right[4]"><input style="visibility: hidden;" type="radio" class="rd_right" name="right" value="4"> правильный ответ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" >
+                                     <a href="<?php echo url::base(); ?>tutor/tests/" class="button small white"><span>Вернуться назад</span></a>
+                                </td>
+                                <td colspan="3" >
+                                    <button type="submit" value="Send" name="submit" class="button medium blue" id="form_submit"><span>Добавить</span></button>
+                                </td>
+                            </tr>
+
+                        </table>
