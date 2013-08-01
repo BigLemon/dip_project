@@ -70,7 +70,6 @@ class Controller_Index_User extends Controller_Index
 	
 	/*
 	 * Настройки пользователя
-	 * TODO: сообщения об успехе или неудачи сохранения
 	 */
 	public function action_settings()
 	{
@@ -126,7 +125,6 @@ class Controller_Index_User extends Controller_Index
 	}
 	/*
 	 * Ф-я отправки сообщения
-	 * TODO: проверки на ошибки
 	 */
 	public function action_sendpm()
 	{
@@ -171,7 +169,6 @@ class Controller_Index_User extends Controller_Index
 	
 	/*
 	 * Загрузка аватара
-	 * TODO: проверки на ошибки
 	 */
 	public function action_updateavatar()
 	{
@@ -225,7 +222,6 @@ class Controller_Index_User extends Controller_Index
 	
 	/*
 	 * Запись на курсы
-	 * TODO: проверки на ошибки
 	 */
 	public function action_addcourse()
 	{
@@ -254,7 +250,6 @@ class Controller_Index_User extends Controller_Index
 	
 	/*
 	 * Удалить записанные курсы
-	 * TODO: проверки на ошибки
 	 */
 	public function action_delcourse()
 	{

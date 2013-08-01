@@ -52,7 +52,6 @@ class Controller_Admin_Courses extends Controller_Index {
 
     /*
      * Удаление курса
-     * TODO: удаление лекций, лаб и тестов
      */
     public function action_delete() {
 

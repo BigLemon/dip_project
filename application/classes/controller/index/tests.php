@@ -17,16 +17,9 @@ class Controller_Index_Tests extends Controller_Index
 		$id_user = Auth::instance()->get_user();
 		$user    = ORM::factory('student', $id_user);
 		$test    = ORM::factory('test', $id);
-		/* $query = DB::select('testresults.id_user', 'testresults.id_test','testresults.result', 'tests.type')
-		->from('testresults')
-		->join('tests')
-		->on('tests.id', '=', 'testresults.id_user') 
-		->where('id_user', '=', $id_user)
-		->and_where('id_test', '=', $id)
-		->execute();
-		var_dump($query);*/
+	
 		
-		$questions                 = ORM::factory('question')->where('id_test', '=', $id)->find_all();
+		$questions = ORM::factory('question')->where('id_test', '=', $id)->find_all();
 		//  $qanswer = ORM::factory('qanswer')->where('question_id', '=', $id)->find_all();
 		$this->template->title     = 'Тесты';
 		$this->template->pageclass = 'fullwidth';

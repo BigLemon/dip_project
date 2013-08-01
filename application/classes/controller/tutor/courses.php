@@ -62,7 +62,6 @@ class Controller_Tutor_Courses extends Controller_Index
 	
 	/*
 	 * Удаление курса
-	 * TODO: удаление лекций, лаб и тестов
 	 */
 	public function action_delete()
 	{
