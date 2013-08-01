@@ -116,7 +116,6 @@ class Controller_Tutor_Exercise extends Controller_Index {
         
         $this->template->title = 'Редактирование задачи';//передача в шаблон title
         $this->template->pageclass = 'fullwidth';
-         /*передача в шаблон представление с массивом данных*/
         $this->template->content = View::factory('tutor/exercise/edit', array(
             'exercise' => $exercise,
             'id' => $id,

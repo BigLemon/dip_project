@@ -15,18 +15,6 @@ class Controller_Index_Main extends Controller_Index {
             'courses' => $courses
             ));
    
-       /* $this->template->content = View::factory('index/index')
-            ->bind('errors', $errors);*/
-
-        /*
-        $news = ORM::factory('new')->limit(3)->find_all();
-        
-        foreach ($news as $entry)
-        {
-            $this->template->content .= '<h3>'. $entry->title .'</h3>'. $entry->short .'<br>';
-            $this->template->content .= '<p><a class="btn" href="/news/view/'. $entry->id .'">Подробнее</a></p><br/>';
-        }
-        */
     }
     
 }
